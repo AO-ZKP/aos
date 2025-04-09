@@ -1,10 +1,11 @@
 import { test } from 'node:test';
 import * as assert from 'node:assert';
 import AoLoader from '@permaweb/ao-loader';
-import fs from 'fs';
+import fs from 'fs'
+import format from '../../format.js';
 
 const wasm = fs.readFileSync('./process.wasm');
-const options = { format: "wasm64-unknown-emscripten-draft_2024_02_15", computeLimit: 100247047330 }
+const options = { format: format, computeLimit: 100247047330 }
 
 const env = {
   Process: {

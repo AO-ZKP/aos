@@ -1,11 +1,12 @@
 import { describe, test } from 'node:test'
 import * as assert from 'node:assert'
 import fs from 'node:fs'
+import format from './format.js'
 
 import AoLoader from '@permaweb/ao-loader'
 
 const wasm = fs.readFileSync('./process.wasm')
-const options = { format: 'wasm64-unknown-emscripten-draft_2024_02_15' }
+const options = { format: format }
 
 const env = {
   Process: {

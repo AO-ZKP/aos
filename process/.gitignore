@@ -5,3 +5,4 @@ yarn.lock
 # binaries
 process.js
 process.wasm
+lua-codebase.md

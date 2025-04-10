@@ -1,7 +1,7 @@
 --- The Eval module provides a handler for evaluating Lua expressions. Returns the eval function.
 -- @module eval
 
-local stringify = require(".stringify")
+local stringify = require("stringify")
 
 --- The eval function.
 -- Handler for executing and evaluating Lua expressions.

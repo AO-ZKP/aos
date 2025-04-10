@@ -6,3 +6,5 @@ yarn.lock
 process.js
 process.wasm
 lua-codebase.md
+test
+crypto

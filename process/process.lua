@@ -385,7 +385,7 @@ function process.handle(msg, _)
     )
   end
 
-  Handlers.append("_default", function () return true end, require('.default')(insertInbox))
+  Handlers.append("_default", function () return true end, require('default')(insertInbox))
 
   -- call evaluate from handlers passing env
   msg.reply =

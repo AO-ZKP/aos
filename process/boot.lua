@@ -29,7 +29,7 @@ end
 -- @param ao The ao environment object
 -- @see eval
 return function (ao)
-  local eval = require(".eval")(ao)
+  local eval = require("eval")(ao)
   return function (msg)
     if #Inbox == 0 then
       table.insert(Inbox, msg)

@@ -370,7 +370,7 @@ function process.handle(msg, _)
     function (msg)
       return msg.Action == "Eval" and Owner == msg.From
     end,
-    require('.eval')(ao)
+    require('eval')(ao)
   )
 
   -- Added for aop6 boot loader

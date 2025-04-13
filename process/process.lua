@@ -381,7 +381,7 @@ function process.handle(msg, _)
       function (msg)
         return msg.Tags.Type == "Process" and Owner == msg.From 
       end,
-      require('.boot')(ao)
+      require('boot')(ao)
     )
   end
 

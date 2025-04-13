@@ -2,7 +2,7 @@
 -- @module process
 
 -- @dependencies
-local pretty = require('.pretty')
+local pretty = require('pretty')
 local base64 = require('.base64')
 local json = require('json')
 local chance = require('.chance')

@@ -25,7 +25,7 @@ Dump = require('.dump')
 Utils = require('.utils')
 Handlers = require('.handlers')
 local stringify = require("stringify")
-local assignment = require('.assignment')
+local assignment = require('assignment')
 Nonce = Nonce or nil
 ao = nil
 if _G.package.loaded['.ao'] then

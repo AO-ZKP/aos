@@ -1,7 +1,8 @@
 import { test } from 'node:test';
 import * as assert from 'node:assert';
 import AoLoader from '@permaweb/ao-loader';
-import fs from 'fs';
+import fs from 'fs'
+import format from '../../format.js';
 
 const wasm = fs.readFileSync('./process.wasm');
 const env = {
@@ -29,7 +30,7 @@ async function init(handle) {
   return Memory
 }
 
-const options = { format: "wasm64-unknown-emscripten-draft_2024_02_15" }
+const options = { format: format }
 test('run morus cipher successfully', async () => {
 	const handle = await AoLoader(wasm, options);
 	const start = await init(handle)

@@ -11,7 +11,7 @@
 -- @field continue The continue function
 local _utils = { _version = "0.0.2" }
 
-local _ = require('.utils')
+local _ = require('utils')
 local ao = require(".ao")
 
 --- Checks if a given message has a tag that matches the specified name and value.

@@ -18,7 +18,7 @@
 -- @field evaluate The evaluate function
 local handlers = { _version = "0.0.5" }
 local coroutine = require('coroutine')
-local utils = require('.utils')
+local utils = require('utils')
 
 handlers.utils = require('.handlers-utils')
 -- if update we need to keep defined handlers

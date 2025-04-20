@@ -22,7 +22,7 @@ Colors = {
 Bell = "\x07"
 
 Dump = require('.dump')
-Utils = require('.utils')
+Utils = require('utils')
 Handlers = require('.handlers')
 local stringify = require("stringify")
 local assignment = require('assignment')

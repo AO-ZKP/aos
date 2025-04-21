@@ -9,7 +9,7 @@ local chance = require('.chance')
 local crypto = require('.crypto.init')
 local coroutine = require('coroutine')
 -- set alias ao for .ao library
-if not _G.package.loaded['ao'] then _G.package.loaded['ao'] = require('.ao') end
+if not _G.package.loaded['ao'] then _G.package.loaded['ao'] = require('ao') end
 
 Colors = {
   red = "\27[31m",
@@ -28,9 +28,7 @@ local stringify = require("stringify")
 local assignment = require('assignment')
 Nonce = Nonce or nil
 ao = nil
-if _G.package.loaded['.ao'] then
-  ao = require('.ao')
-elseif _G.package.loaded['ao'] then
+if _G.package.loaded['ao'] then
   ao = require('ao')
 end
 -- Implement assignable polyfills on _ao

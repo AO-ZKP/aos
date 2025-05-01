@@ -10,3 +10,4 @@ aos.json
 .vscode
 .DS_Store
 *.a
+*codebase.md

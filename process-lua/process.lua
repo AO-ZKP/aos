@@ -23,7 +23,7 @@ Bell = "\x07"
 
 Dump = require('.dump')
 Utils = require('utils')
-Handlers = require('.handlers')
+Handlers = require('handlers')
 local stringify = require("stringify")
 local assignment = require('assignment')
 Nonce = Nonce or nil
